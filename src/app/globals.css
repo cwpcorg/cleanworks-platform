@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-paper text-ink font-body;
+  }
+  h1, h2, h3 {
+    @apply font-display;
+  }
+}
+
+@layer components {
+  /* The signature element: every job/property renders as a torn inspection
+     tag rather than a generic card. */
+  .tag-card {
+    @apply relative bg-white border border-line rounded-tag p-5;
+    background-image: radial-gradient(circle, #DEDDD3 1px, transparent 1px);
+    background-size: 100% 10px;
+    background-position: top left;
+    background-repeat: no-repeat;
+  }
+
+  .stamp {
+    @apply inline-flex items-center gap-1.5 px-2.5 py-1 rounded-tag font-tag text-xs uppercase tracking-wider border-2;
+  }
+  .stamp-clean { @apply border-clean text-clean; }
+  .stamp-progress { @apply border-progress text-progress; }
+  .stamp-attention { @apply border-attention text-attention; }
+
+  .btn-primary {
+    @apply bg-ink text-paper font-display font-medium px-5 py-3 rounded-tag hover:opacity-90 active:opacity-80 transition;
+  }
+}

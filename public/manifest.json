@@ -1,0 +1,14 @@
+{
+  "name": "CleanWorks Pro",
+  "short_name": "CleanWorks",
+  "description": "Field checklist and job tracking for CleanWorks Pro",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F7F7F5",
+  "theme_color": "#1C1E1B",
+  "orientation": "portrait",
+  "icons": [
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
